@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tutorials
+﻿namespace Tutorials
 {
-    class Equity : Instrument
+    internal class Equity : Instrument
     {
         public decimal StrikePrice { get; set; }
         public string ShareClass { get; set; }

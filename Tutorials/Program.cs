@@ -1,23 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Tutorials
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            //BoxingAndUnboxing();   
+            //BoxingAndUnboxing();
             //Casting();
 
             //RefAndValueTypes();
+            HackerRankMilitaryTime("07:05:45PM");
 
             Console.WriteLine(HackerRankSherlock(66317)); //-1
-
-
         }
 
         private static string Nums(int threes, int fives)
@@ -27,14 +24,13 @@ namespace Tutorials
             {
                 sb.Append("5");
             }
-            for (int i = fives; i < (fives+threes); i++)
+            for (int i = fives; i < (fives + threes); i++)
             {
                 sb.Append("3");
             }
 
             return sb.ToString();
         }
-
 
         private static string HackerRankSherlock(int digits)
         {
@@ -56,7 +52,7 @@ namespace Tutorials
                 remainder = digits - (3 * i);
                 if (remainder % 5 == 0)
                 {
-                    return Nums(remainder, 3*i);
+                    return Nums(remainder, 3 * i);
                 }
             }
             if (digits % 5 == 0)
@@ -67,10 +63,8 @@ namespace Tutorials
             return "-1";
         }
 
-        private static void HackerRankMilitaryTime()
+        private static void HackerRankMilitaryTime(string input)
         {
-            String input = "07:05:45PM";
-
             DateTime d = DateTime.Parse(input);
 
             //19:05:45
@@ -101,7 +95,7 @@ namespace Tutorials
             {
                 seconds = "0" + d.Second.ToString();
             }
-            Console.WriteLine(hours + ":" + minutes + ":"+ seconds);
+            Console.WriteLine(hours + ":" + minutes + ":" + seconds);
         }
 
         private static void HackerRankStaircase()
@@ -122,7 +116,6 @@ namespace Tutorials
                     Console.Write(list[x]);
                 }
                 Console.WriteLine("");
-
             }
         }
 
@@ -195,9 +188,6 @@ namespace Tutorials
                     //Console.WriteLine("Cast: " + (Equity)x); //This would throw exception.
                 }
             }
-
-
-
         }
 
         /// <summary>
@@ -219,14 +209,11 @@ namespace Tutorials
             {
                 Console.WriteLine(i); //No Boxing (method has overloads for primitive types).
             }
-            for(int i = 0; i < boxing.Count; i++)
+            for (int i = 0; i < boxing.Count; i++)
             {
                 //Cast is required or compiler error.
                 Console.WriteLine((int)boxing[i] * (int)boxing[i]); //Otherwise * is on two objects not two ints.
             }
         }
     }
-
-
-    
 }
