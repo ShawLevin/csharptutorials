@@ -156,5 +156,82 @@ namespace Tutorials
             sw.Stop();
             Console.WriteLine("TryCatch: " + sw.ElapsedMilliseconds);
         }
+
+        public static void BoxedList()
+        { }
+
+        public static void ArrayVsList()
+        {
+            Stopwatch sw = new Stopwatch();
+            int counter = 10000000;
+            List<Instrument> list = new List<Instrument>();
+            Instrument[] arr = new Instrument[counter];
+
+            sw.Restart();
+            for (int i = 0; i < counter; i++)
+            {
+                list.Add(new Instrument());
+            }
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
+
+            sw.Restart();
+            for (int i = 0; i < counter; i++)
+            {
+                arr[i] = new Instrument();
+            }
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
+
+            sw.Restart();
+            for (int i = 0; i < counter; i++)
+            {
+                list[i].Id = 1;
+            }
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
+
+            sw.Restart();
+            for (int i = 0; i < counter; i++)
+            {
+                arr[i].Id = 1;
+            }
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds);
+        }
+
+        public static void InterfacedList()
+        {
+            Stopwatch sw = new Stopwatch();
+            int counter = 10000000;
+            List<Instrument> ins = new List<Instrument>();
+            List<FixedIncome> fi = new List<FixedIncome>();
+            List<Instrument> fins = new List<Instrument>();
+            Console.WriteLine("Int parsing with counter: " + counter);
+
+            sw.Restart();
+            for (int i = 0; i < counter; i++)
+            {
+                ins.Add(new Instrument());
+            }
+            sw.Stop();
+            Console.WriteLine("Interface: " + sw.ElapsedMilliseconds);
+
+            sw.Restart();
+            for (int i = 0; i < counter; i++)
+            {
+                fi.Add(new FixedIncome());
+            }
+            sw.Stop();
+            Console.WriteLine("Conrete: " + sw.ElapsedMilliseconds);
+
+            sw.Restart();
+            for (int i = 0; i < counter; i++)
+            {
+                fins.Add(new FixedIncome());
+            }
+            sw.Stop();
+            Console.WriteLine("Mix: " + sw.ElapsedMilliseconds);
+        }
     }
 }
