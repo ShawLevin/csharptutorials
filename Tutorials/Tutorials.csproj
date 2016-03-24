@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Equity.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="FixedIncome.cs" />
+    <Compile Include="HackerRank.cs" />
     <Compile Include="Instrument.cs" />
+    <Compile Include="Performance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
