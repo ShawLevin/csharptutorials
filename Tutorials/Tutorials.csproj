@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Equity.cs" />
     <Compile Include="FixedIncome.cs" />
+    <Compile Include="Google.cs" />
     <Compile Include="Instrument.cs" />
+    <Compile Include="Language.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
