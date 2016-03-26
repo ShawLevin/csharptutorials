@@ -1,23 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
 namespace Tutorials
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //BoxingAndUnboxing();   
             //Casting();
-        }
+                }
 
         
     }
-
-
-    
 }
