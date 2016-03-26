@@ -16,13 +16,19 @@ namespace Tutorials
             //HackerRank.Staircase();
             //HackerRank.Sherlock(66317); //-1
 
-            Performance.ArrayVsList();
-            Performance.InterfacedList();
+            //Performance.ArrayVsList();
+            //Performance.InterfacedList();
             /*Performance.DictionaryContainsKey();
             Performance.IntTryParse();
             Performance.Loops();
             Performance.Strings();
             */
+
+            Instrument i = new Instrument();
+            i.Id = 1;
+            i.SkipMe();
+            i.DoNotUse();
+            i.WhatAmI();
         }
 
 

@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Equity.cs" />
+    <Compile Include="Attributes.cs" />
+    <Compile Include="Models\Equity.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="FixedIncome.cs" />
-    <Compile Include="HackerRank.cs" />
-    <Compile Include="Instrument.cs" />
+    <Compile Include="Models\FixedIncome.cs" />
+    <Compile Include="Puzzles\HackerRank.cs" />
+    <Compile Include="Models\Instrument.cs" />
+    <Compile Include="MultiThreading.cs" />
     <Compile Include="Performance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
