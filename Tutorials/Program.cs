@@ -104,6 +104,8 @@ namespace Tutorials
                     //Console.WriteLine("Cast: " + (Equity)x); //This would throw exception.
                 }
 
-        
+
+            }
+        }
     }
 }
