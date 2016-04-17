@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Tutorials
 {
-    [DebuggerDisplay("ID = {Id}")]
+    //[DebuggerDisplay("ID = {Id}")]
     internal class Instrument
     {
         public uint _id;
