@@ -26,5 +26,15 @@ namespace Tutorials
         {
             Console.WriteLine("Skip me in the debugger.");
         }
+
+        public void CallInstanceMethod()
+        {
+            int x = 0;
+        }
+
+        public static void CallStaticMethod()
+        {
+            int x = 0;
+        }
     }
 }
